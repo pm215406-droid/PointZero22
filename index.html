@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point Zero — Студия качественного детейлинга</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <div class="logo">Point<span>Zero</span></div>
+        <nav>
+            <a href="#services">Услуги</a>
+            <a href="#calculator">Калькулятор</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#booking">Запись</a>
+            <a href="#contacts">Контакты</a>
+           
+        </nav>
+        <a href="tel:+79833997777" class="phone">📞 +7 (983) 399-77-77</a>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <h1>Профессиональный <span>детейлинг</span></h1>
+        <p>Профессиональный уход за автомобилем: химчистка, полировка, керамика,защита (полеуретан), тонировка.</p>
+        <a href="#booking" class="btn">Записаться</a>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services">
+        <h2>Наши услуги</h2>
+        <div class="services-grid">
+            <div class="card">
+                <h3>🚿 Комплексная мойка</h3>
+                <p>Бесконтактная мойка, очистка дисков, сушка</p>
+                <span class="price">от 2 500 ₽</span>
+            </div>
+            <div class="card">
+                <h3>🧼 Химчистка салона</h3>
+                <p>Глубокая очистка, удаление запахов</p>
+                <span class="price">от 8 000 ₽</span>
+            </div>                                                    
+            <div class="card">
+                <h3>✨ Полировка кузова</h3>
+                <p>Удаление царапин, восстановление блеска</p>
+                <span class="price">от 10 000 ₽</span>
+            </div>
+            <div class="card">
+                <h3>🛡️ Керамика</h3>
+                <p>Защита ЛКП до 3 лет, гидрофоб</p>
+                <span class="price">от 17 000 ₽</span>
+        </div>
+    </section>
+
+    <!-- Калькулятор -->
+    <section id="calculator">
+        <h2>Калькулятор стоимости</h2>
+        <div class="calc-box">
+            <label>Класс авто:</label>
+            <select id="carClass">
+                <option value="1">Седан / Хэтчбек</option>
+                <option value="1.3">Бизнес-класс</option>
+                <option value="1.6">Кроссовер / Внедорожник</option>
+                <option value="2">Премиум / Большой внедорожник</option>
+                <option value="3">Минивен / Микроавтобус</option>
+            </select>
+
+            <label>Услуга:</label>
+            <select id="service">
+                <option value="2500">Комплексная мойка</option>
+                <option value="8000">Химчистка салона</option>
+                <option value="12000">Полировка</option>
+                <option value="17000">Керамика</option>
+                <option value="140000">Полеуретан</option>
+            </select>
+
+            <label>
+                <input type="checkbox" id="extra"> Доп. защита воском (+1 500 ₽)
+            </label>
+
+            <div class="result" id="result">Итого: 2 500 ₽</div>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section id="gallery">
+        <h2>Наши работы</h2>
+        <div class="gallery-grid">
+            <img src="images/foto-1.jpg">
+            <img src="images/foto-2.jpg">
+            <img src="images/foto-3.jpg">
+            <img src="images/foto-4.jpg">
+            <img src="images/foto-5.jpg">
+        </div>
+    </section>
+
+    <!-- Форма записи -->
+    <section id="booking">
+        <h2>Записаться</h2>
+        <form class="booking-form" id="bookingForm">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="tel" placeholder="Телефон" required>
+            <select required>
+                <option value="">Выберите услугу</option>
+                <option>Комплексная мойка</option>
+                <option>Химчистка салона</option>
+                <option>Полировка</option>
+ 
+<option>Керамика</option>
+            </select>
+            <input type="date">
+            <textarea placeholder="Комментарий (марка авто, пожелания)"></textarea>
+            <button type="submit" class="btn">Отправить заявку</button>
+        </form>
+        <div class="success-msg" id="successMsg" style="display:none;">
+            ✅ Заявка отправлена! Мы скоро свяжемся с вами.
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts">
+        <h2>Контакты</h2>
+        <div class="contacts-grid">
+            <div>📍 г. <Барнаул, ул. Эмилии-Алексеевой, 20</div>
+            <div>🕐 Ежедневно 9:00–21:00</div>
+            <div>📞 +7 (983) 399-77-77</div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <p>© 2026 Point Zero. Все права защищены.</p>
+    </footer>
+
+    <!-- Модальное окно для галереи -->
+    <div class="modal" id="modal">
+        <span class="modal-close">&times;</span>
+        <img src="" alt="Просмотр фото" id="modalImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
